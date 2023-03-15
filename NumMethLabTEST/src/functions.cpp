@@ -246,47 +246,47 @@ double d2F3Cos100X(double x)
 
 double MainFunc4CosX(double x)
 {
-    return log(x) / (x + 1.0) + cos(x);
+    return log(x + 1) / (x + 1.0) + cos(x);
 }
 
 double dF4CosX(double x)
 {
-    return (1 - log(x)) / ((x + 1.0)*(x + 1.0)) - sin(x);
+    return (1 - log(x + 1)) / ((x + 1.0)*(x + 1.0)) - sin(x);
 }
 
 double d2F4CosX(double x)
 {
-    return (2*log(x) - 3) / ((x + 1.0)*(x + 1.0)*(x + 1.0)) - cos(x);
+    return (2*log(x + 1) - 3) / ((x + 1.0)*(x + 1.0)*(x + 1.0)) - cos(x);
 }
 
 double MainFunc4Cos10X(double x)
 {
-    return log(x) / (x + 1.0) + cos(10*x);
+    return log(x + 1) / (x + 1.0) + cos(10*x);
 }
 
 double dF4Cos10X(double x)
 {
-    return (1 - log(x)) / ((x + 1.0)*(x + 1.0)) - 10*sin(10*x);
+    return (1 - log(x + 1)) / ((x + 1.0)*(x + 1.0)) - 10*sin(10*x);
 }
 
 double d2F4Cos10X(double x)
 {
-    return (2*log(x) - 3) / ((x + 1.0)*(x + 1.0)*(x + 1.0)) - 100*cos(10*x);
+    return (2*log(x + 1) - 3) / ((x + 1.0)*(x + 1.0)*(x + 1.0)) - 100*cos(10*x);
 }
 
 double MainFunc4Cos100X(double x)
 {
-    return log(x) / (x + 1.0) + cos(100*x);
+    return log(x + 1) / (x + 1.0) + cos(100*x);
 }
 
 double dF4Cos100X(double x)
 {
-    return (1 - log(x)) / ((x + 1.0)*(x + 1.0)) - 100*sin(100*x);
+    return (1 - log(x + 1)) / ((x + 1.0)*(x + 1.0)) - 100*sin(100*x);
 }
 
 double d2F4Cos100X(double x)
 {
-    return (2*log(x) - 3) / ((x + 1.0)*(x + 1.0)*(x + 1.0)) - 10000*cos(100*x);
+    return (2*log(x + 1) - 3) / ((x + 1.0)*(x + 1.0)*(x + 1.0)) - 10000*cos(100*x);
 }
 //---------------------------------
 
