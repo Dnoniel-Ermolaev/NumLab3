@@ -278,15 +278,21 @@ void MainWindow::replotGraphs(int n)
 
 void MainWindow::on_lineA_textEdited(const QString &arg1)
 {
-    currTask.a = arg1.toDouble();
-    replotGraphs();
+    if(arg1.toDouble() != currTask.b)
+    {
+        currTask.a = arg1.toDouble();
+        replotGraphs();
+    }
 }
 
 
 void MainWindow::on_lineB_textEdited(const QString &arg1)
 {
-    currTask.b = arg1.toDouble();
-    replotGraphs();
+    if(arg1.toDouble() != currTask.a)
+    {
+        currTask.b = arg1.toDouble();
+        replotGraphs();
+    }
 }
 
 
